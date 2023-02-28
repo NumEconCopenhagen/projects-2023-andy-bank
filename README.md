@@ -1,9 +1,9 @@
-# \[Group name\]
+# \[Andy of Bank\]
 
 **Group members:**
-- A
-- B
-- C
+- Anders Rosman Nielsen
+- Frederik Bank
+- 
 
 This repository contains  
 1. Inaugural project. 
