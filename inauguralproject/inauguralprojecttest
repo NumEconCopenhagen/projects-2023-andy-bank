@@ -8,6 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 class HouseholdSpecializationModelClass:
+    
 
     def __init__(self):
         """ setup model """
@@ -60,7 +61,7 @@ class HouseholdSpecializationModelClass:
         elif par.sigma == 1:
             H = HM**(1-par.alpha)*HF**par.alpha
         else:
-            H=((1-par.alpha)*HM**((par.sigma-1)/par.sigma)+par.alpha*HF**((par.sigma-1)/par.sigma)**(pat.sigma/(par.sigma-1))
+            H=((1-par.alpha)*HM**((par.sigma-1)/par.sigma)+par.alpha*HF**((par.sigma-1)/par.sigma)**(par.sigma/(par.sigma-1)))
     
 
         # c. total consumption utility
@@ -75,7 +76,7 @@ class HouseholdSpecializationModelClass:
         
         return utility - disutility
 
-    def solve_discrete(self,do_print=False):
+    def solve_discrete(self,do_print=True):
         """ solve model discretely """
         
         par = self.par
@@ -138,5 +139,32 @@ class HouseholdSpecializationModelClass:
         """ estimate alpha and sigma """
 
         pass
+
+
+
+model = HouseholdSpecializationModelClass
+
+model.par.alpha = 0.5
+model.par.sigma = 1
+wF_values = [0.8, 0.9, 1.0, 1.1, 1.2]
+res_HFHM_c = np.empty(5)
+res_wFwM_c = np.empty(5)
+
+
+#Continuous solving:
+for i, wF in enumerate(model.par.wF_vec):
+    model.par.wF = wF
+    opt = model.solve()
+    #Saving results
+    res_HFHM_c[i] = np.log(opt.HF/opt.HM)
+    res_wFwM_c[i] = np.log(model.par.wF/model.par.wM)
+        
+#Plotting
+fig = plt.figure()
+ax = fig.add_subplot(1,1,1)
+ax.plot(res_wFwM_c, res_HFHM_c)
+ax.set_xlabel("log $w_F$ - log $w_M$")
+ax.set_ylabel("log $H_F$ - log $H_M$")
+plt.show()
 
 
