@@ -1,6 +1,6 @@
 # Data analysis project
 
-Our project is titled **analysing the Danish housing market for overvaluation** and is about: Evaluating the Danish housing market for potential overvaluation during the period 1996-2021. We will analyze the trend of real house prices and real disposable income over time and calculate the price-to-income ratio and price-to-rent ratio to ddetermine whether it is overvalued as of 2021Q2. 
+Our project is titled **analysing the Danish housing market for overvaluation** and is about: Evaluating the Danish housing market for potential overvaluation during the period 1996-2021. We will analyze the trend of real house prices and real disposable income over time and calculate the price-to-income ratio and price-to-rent ratio to determine whether it is overvalued as of 2021Q2. 
 
 The **results** of the project can be seen from running [dataproject.ipynb](dataproject.ipynb).
 
