@@ -1,13 +1,13 @@
 # Data analysis project
 
-Our project is titled **PROJECT TITLE** and is about EXPLAIN.
+Our project is titled **analysing the Danish housing market for overvaluation** and is about: Evaluating the Danish housing market for potential overvaluation during the period 1996-2021. We will analyze the trend of real house prices and real disposable income over time and calculate the price-to-income ratio and price-to-rent ratio to ddetermine whether it is overvalued as of 2021Q2. 
 
 The **results** of the project can be seen from running [dataproject.ipynb](dataproject.ipynb).
 
-We apply the **following datasets**:
+We apply Data from Danmarks statisk and Nationalbanken is used in this assignment. 
 
-1. dataX.csv (*source*) 
-1. dataY.csv (*source*)
+1. Data_opg_2.csv (Nationalbanken) 
+1. Pricerent.csv (Danmarks statistik)
 
 **Dependencies:** Apart from a standard Anaconda Python 3 installation, the project requires the following installations:
 
