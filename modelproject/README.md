@@ -11,3 +11,8 @@ The reuslts of our project can be seen from running our project "modelproject.ip
 Furtermore a numerical solution using the scipy.optimize tool to find the steady-state values by maximizing the output per capita equation. The numerical solution tests for convergence by providing five different initial values of capital per capita.
 
  Lastly we plot the convergence to the steady state using different growth rates in the technological factor.
+
+
+**Group Members**: The members of this group are: Anders Rosman Nielsen (QCV954) and Frederik Koldkjær Bank (HLN311)
+
+**Dependencies:** Apart from a standard Anaconda Python 3 installation, the project requires the following installations: No additional needs.
