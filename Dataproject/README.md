@@ -4,7 +4,7 @@ Our project is titled **analysing the Danish housing market for overvaluation** 
 
 The **results** of the project can be seen from running [dataproject.ipynb](dataproject.ipynb).
 
-We apply Data from Danmarks statisk and Nationalbanken is used in this assignment. 
+We apply Data from Danmarks statisk and Nationalbanken in this assignment. 
 
 1. Data_opg_2.csv (Nationalbanken) 
 1. Pricerent.csv (Danmarks statistik)
