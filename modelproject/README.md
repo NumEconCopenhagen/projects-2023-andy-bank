@@ -1,18 +1,18 @@
-# Model analysis project
+# Data analysis project
 
-Our project is titled **The Solow Model** and is about a macroeconomic model that investigates the sources of economic growth in an economy.
+Our project is titled **analysing the Danish housing market for overvaluation** and is about: Evaluating the Danish housing market for potential overvaluation during the period 1996-2021. We will analyze the trend of real house prices and real disposable income over time and calculate the price-to-income ratio and price-to-rent ratio to determine whether it is overvalued as of 2021Q2. 
 
-The solow model assumes that a single company is representative of the entire economy.
-The model is based upon a labor force, a production function that yields constant returns to scale and diminishing returns to capital accumulatio as seen in previous macroecnomics courses.
+The **results** of the project can be seen from running [dataproject.ipynb](dataproject.ipynb).
 
+We apply Data from Danmarks statisk and Nationalbanken is used in this assignment. 
 
-The reuslts of our project can be seen from running our project "modelproject.ipynb".
- Our code gives two ways of solving the solow model, an analytical solution using the sympy tool, in order to derive the steady-state values of capital and output per capital.
-Furtermore a numerical solution using the scipy.optimize tool to find the steady-state values by maximizing the output per capita equation. The numerical solution tests for convergence by providing five different initial values of capital per capita.
+1. Data_opg_2.csv (Nationalbanken) 
+1. Pricerent.csv (Danmarks statistik)
 
- Lastly we plot the convergence to the steady state using different growth rates in the technological factor.
+**Dependencies:** Apart from a standard Anaconda Python 3 installation, the project requires the following installations:
 
+``pip install matplotlib-venn``
 
 **Group Members**: The members of this group are: Anders Rosman Nielsen (QCV954) and Frederik Koldkjær Bank (HLN311)
 
-**Dependencies:** Apart from a standard Anaconda Python 3 installation, the project requires the following installations: No additional needs.
+The **results** of the project can be seen from running dataproject.ipynb.
