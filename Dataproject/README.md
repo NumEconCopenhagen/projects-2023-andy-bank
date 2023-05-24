@@ -12,3 +12,5 @@ We apply Data from Danmarks statisk and Nationalbanken is used in this assignmen
 **Dependencies:** Apart from a standard Anaconda Python 3 installation, the project requires the following installations:
 
 ``pip install matplotlib-venn``
+
+**Group Members**: The members of this group are: Anders Rosman Nielsen (QCV954) and Frederik Koldkjær Bank (HLN311)
