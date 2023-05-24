@@ -53,7 +53,6 @@ plt.title('Price to Income Ratio Graph with Trendline')
 plt.legend(['Price to Income Ratio', 'Average Price-Income Ratio'], loc='best')
 plt.show()
 
-
 ff = pd.read_csv('Pricerent.csv')
 
 #Here we open another dataset containing house price and rent levels for Denmark since 1996.
@@ -67,9 +66,11 @@ avg_real_house_to_rent_ratio = np.mean(ff['Real house price to real rent'])
 plt.plot(ff['Real house price to real rent'])
 plt.plot([0, len(ff)], [avg_real_house_to_rent_ratio, avg_real_house_to_rent_ratio], 'r--')
 plt.xlabel('Quarters since Q1 1996')
-plt.ylabel('Price to Income Ratio')
-plt.title('Price to Income Ratio Graph with Trendline')
-plt.legend(['Price to Income Ratio', 'Average Price-Income Ratio'], loc='best')
+plt.title('Price-to-Rent Ratio vs. Trend')
+plt.legend(['Price-to-Rent Ratio', 'Average Price-to-Rent Ratio'], loc='best')
 plt.show()
+
+
+
 
 
